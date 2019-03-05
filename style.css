@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Passion One', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+
+:root{
+    --primary-font: 'Passion One', cursive;
+    --secondary-font: 'Montserrat', sans-serif;
+    --tertiary-font: 'Open Sans', sans-serif;
+    --color-primary: #435E72;
+    --color-secondary: rgba(0, 0, 0, 0.5);
+    --color-tertiary: #5652FF;
+    --default-color: #000000;
+}
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color-primary);
+}
+
+.main{
+    background: #E5E5E5;
+}
+
+.layout{
+    min-height: 100vh;
+    padding: 5% 0;
+    text-align: center;
+    /* background: red; */
+}
+
+.intro-text{
+    font-family: var(--tertiary-font);
+}
+.intro-text h1{
+    font-size: 30px;
+    color: #737373;
+    padding-bottom: 3%;
+    font-weight: 200;
+}
+.intro-text h1 > span{
+    color: var(--color-tertiary);
+    font-size: 38px;
+    font-weight: bold;
+}
+.intro-text p{
+    font-size: 16px;
+    color: var(--default-color);
+    letter-spacing: 0.21rem;
+    padding-bottom: 8%;
+
+}
+
+/* CARDS */
+
+.card-x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-x-rd{
+    height: 450px;
+    width: 350px;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 10px;
+    padding-top: 8%;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.card-x-rd:hover{
+    transform: translateY(-35px);
+}
+
+.card-x-rd:hover > .plus{
+    transform: scale(1);
+}
+.card-x-rd h1{
+    font-family: var(--primary-font);
+    color: var(--color-primary);
+    font-size: 60px;
+}
+
+.card-x-rd p{
+    font-size: 25px;
+    color: var(--color-secondary);
+    font-family: var(--secondary-font);
+}
+
+.plus{
+    position: absolute;
+    right: -25px;
+    background: #fff;
+    top: -25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}
+
+.plus p{
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.svg-card-s{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.svg-curve{
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 100%;
+    z-index: 111;
+}
+
+.svg-ab{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.svg-1{
+    left: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.svg-2{
+    left: 2px;
+}
+
+.svg-3{
+    right: 45px;
+}
+
+.svg-4{
+    /* top: 65%; */
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+}
+.svg-cy{
+    left: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.svg-top{
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+}
